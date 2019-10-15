@@ -10,17 +10,23 @@ import { PagesModule } from './pages/page.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+//import { IncrementadorComponent } from './components/incrementador/incrementador.component';
+
+//temporal
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,    
+    RegisterComponent,
+    //IncrementadorComponent,    
   ],
   imports: [
     BrowserModule,
     PagesModule,
     AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
